@@ -1,0 +1,43 @@
+Biz burada yeni bir {1,2,3,4,5,7,20} ededlerinin kvadratlarini aldiq !
+
+#include <stdio.h>
+
+int main(){
+int script []={1,2,3,5,7,20};
+int c = 0, i;
+for (;i<6;i++)
+{
+    c = script[i] * script[i];
+    printf("%d \n",c);
+}
+}
+
+Biz burada {} icerisinde olan ededleri ozlerine topladiq
+#include <stdio.h>
+int main(){
+    int script []={1,2,3,4,5,6};
+    int c = 0, i;
+    for (;i<6;i++)
+    {
+        c = script[i] + script[i];
+        printf("%d\n",c);
+    }
+}
+
+
+
+
+Biz burada istifadeciden 5 deyer almaq ucun komanda veririk birinci 'printf' istifadeciden reqem daxil etmeyini teleb edirik ve o reqemi bir bazada tuturuq
+#include <stdio.h>
+int main() {
+int script [5];
+printf("5 eded reqem daxil edin : \n");
+for(int i=0;i<=4;i++)
+{
+    printf("%d reqem :",i+1); scanf("%d",&script[i]);
+}
+for(int i=0;i<=4;i++)
+{
+    printf("Scriptin %d. iscisi =%d\n",i,script[i]);
+}
+}
